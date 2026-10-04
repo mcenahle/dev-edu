@@ -71,10 +71,46 @@ import { Icon } from "astro-icon/components";
             >
           </li>
           <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="javascript:void(0)"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">外部链接</a
+            >
+            <ul
+              class="dropdown-menu m-0 border-0 shadow-sm p-2 dropdown-menu-end"
+            >
+              <li>
+                <a
+                  class="dropdown-item px-3 py-2 rounded"
+                  href="https://orcid.org/0009-0009-8499-4500"
+                  target="_blank"
+                  ><img
+                    src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+                    style="width: 1em;"
+                    alt="ORCID iD icon"
+                  /> My orcid ID <Icon name="mdi:open-in-new" /></a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item px-3 py-2 rounded"
+                  href="https://mail.mcenahle.edu.pl/"
+                  target="_blank">edu webmail <Icon name="mdi:open-in-new" /></a
+                >
+              </li>
+            </ul>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" aria-label="Cart">
-              <Icon name="bi:cart" />
+            <a
+              class="nav-link"
+              href="https://github.com/mcenahle/edu/"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <Icon name="mdi:github" /> 查看本网站源代码
             </a>
           </li>
         </ul>
