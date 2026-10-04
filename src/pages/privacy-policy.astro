@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "隐私声明";
+---
+
+<Layout title={title}>
+  <div class="mywords">
+    <h2>{title}</h2>
+    <p>
+      本网站为静态网站，且 mcenahle 已经关闭 Cloudflare Web Analytics
+      功能，也不存在所谓的 Cookie。旨在让访客只看信息。即看即走。
+    </p>
+    <p>
+      We do not eat cookies. We eat <a
+        href="https://www.apple.com.cn"
+        target="_blank"><u>apples</u> <Icon name="mdi:open-in-new" /></a
+      > instead.
+    </p>
+  </div>
+</Layout>
