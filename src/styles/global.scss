@@ -167,3 +167,64 @@ iframe {
   width: 100%;
   height: 600px;
 }
+
+.post-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  color: #000000;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "JetBrainsMono-Regular";
+  src: url("https://www.mcenahle.org.cn/fonts/JetBrainsMono-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+code {
+  overflow-wrap: anywhere;
+  background-color: transparent !important;
+  font-size: 100%;
+  margin-left: 4px;
+  margin-right: 4px;
+  color: currentColor;
+  font-family: "JetBrainsMono-Regular" !important;
+}
+
+.posts {
+  text-indent: 2em;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "MN Source Han Serif SC", serif;
+
+  a {
+    text-decoration: underline dotted;
+  }
+
+  p,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  img {
+    max-width: 100%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px auto;
+  }
+}
