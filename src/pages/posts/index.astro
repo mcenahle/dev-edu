@@ -1,0 +1,39 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+
+const allPosts = Object.values(
+  import.meta.glob("./*.md", { eager: true }),
+).sort(
+  (a: any, b: any) =>
+    new Date(b.frontmatter.pubDate).getTime() -
+    new Date(a.frontmatter.pubDate).getTime(),
+);
+
+const title = "相关文章";
+---
+
+<Layout title={title}>
+  <div class="mywords">
+    <h2>{title}</h2>
+
+    <div class="list-group">
+      {
+        allPosts.map((post: any) => (
+          <a href={post.url} class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">{post.frontmatter.title}</h5>
+              <small class="text-body-secondary">
+                {post.frontmatter.pubDate}
+              </small>
+            </div>
+            <p class="mb-1">{post.frontmatter.description}</p>
+            <small class="text-body-secondary">
+              作者：{post.frontmatter.author}
+            </small>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Layout>
