@@ -76,3 +76,24 @@ a {
     flex: 1;
   }
 }
+
+.lead > .icon-link > .icons {
+  transition: transform 0.4s;
+}
+
+.lead > .icon-link:hover > .icons {
+  transform: translateX(4px);
+}
+
+a,
+.btn,
+.nav-link {
+  transition: all 0.3s ease-in-out;
+}
+
+a:focus,
+.btn:focus,
+.nav-link:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
