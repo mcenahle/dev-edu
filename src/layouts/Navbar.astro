@@ -51,7 +51,12 @@ import { Icon } from "astro-icon/components";
               />
             </a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Tour</a></li>
+          <li class="nav-item">
+            <a
+              class={`nav-link ${isActive("/cet-6") ? "active" : ""}`}
+              href="/cet-6/">英语六级准备</a
+            >
+          </li>
           <li class="nav-item">
             <a
               class={`nav-link ${isActive("/biology") ? "active" : ""}`}
@@ -70,7 +75,6 @@ import { Icon } from "astro-icon/components";
               href="/research/">个人迷你小论文</a
             >
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
