@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "英语六级模考";
+---
+
+<Layout title={title}>
+  <div class="mywords">
+    <h2>{title}</h2>
+    <p>
+      英语六级下次考试将于2026-12-12下午开始。那么为了准备该考试，拟定进行数次模考。
+    </p>
+
+    <div style="margin-top: 12px;">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>考次</th>
+            <th>考试日期</th>
+            <th>考试试卷</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>第一次</td>
+            <td>2026-10-?</td>
+            <td><i>待定</i></td>
+          </tr>
+          <tr>
+            <td>第二次</td>
+            <td>2026-11-?</td>
+            <td><i>待定</i></td>
+          </tr>
+          <tr>
+            <td>第三次</td>
+            <td>2026-12-?</td>
+            <td><i>待定</i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top: 12px;">
+      12月1日9时起，完成CET笔试报名及缴费的考生可 <a
+        href="https://cet-bm.neea.edu.cn/Home/QuickPrintTestTicket"
+        target="_blank"
+        ><u>登录CET报名网站</u> <Icon name="mdi:open-in-new" /></a
+      > 下载、打印笔试准考证。
+    </p>
+  </div>
+</Layout>
