@@ -13,6 +13,10 @@ export default defineConfig({
   },
   integrations: [icon()],
 
+  redirects: {
+    "/about-me": "https://hi.mcenahle.page/my/",
+  },
+
   markdown: {
     rehypePlugins: [
       [
