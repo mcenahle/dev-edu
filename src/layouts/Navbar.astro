@@ -52,7 +52,12 @@ import { Icon } from "astro-icon/components";
             </a>
           </li>
           <li class="nav-item"><a class="nav-link" href="#">Tour</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+          <li class="nav-item">
+            <a
+              class={`nav-link ${isActive("/biology") ? "active" : ""}`}
+              href="/biology/">生物学</a
+            >
+          </li>
           <li class="nav-item">
             <a
               class={`nav-link ${isActive("/posts") ? "active" : ""}`}
