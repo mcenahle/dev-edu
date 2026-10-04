@@ -23,11 +23,15 @@ const title = "相关文章";
           <a href={post.url} class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-between">
               <h5 class="mb-1">{post.frontmatter.title}</h5>
-              <small class="text-body-secondary">
+              {/* <small class="text-body-secondary">
                 {post.frontmatter.pubDate}
-              </small>
+              </small> */}
             </div>
             <p class="mb-1">{post.frontmatter.description}</p>
+            <small class="text-body-secondary">
+              发布日期：{post.frontmatter.pubDate}
+            </small>
+            <br />
             <small class="text-body-secondary">
               作者：{post.frontmatter.author}
             </small>
