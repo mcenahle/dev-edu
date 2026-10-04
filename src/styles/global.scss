@@ -117,3 +117,24 @@ a:focus,
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+
+.card-image {
+  display: block;
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 21px 21px 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+u {
+  text-decoration: underline dotted;
+}
+
+.nav-link.active {
+  background-color: #0d6efd;
+  border-radius: 4px;
+}
